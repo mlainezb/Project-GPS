@@ -1,0 +1,57 @@
+<%= form_for(gp) do |f| %>
+  <% if gp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gp.errors.count, "error") %> prohibited this gp from being saved:</h2>
+
+      <ul>
+      <% gp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :status %>
+    <%= f.number_field :status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :latitude %>
+    <%= f.text_field :latitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :length %>
+    <%= f.text_field :length %>
+  </div>
+
+  <div class="field">
+    <%= f.label :available_gps %>
+    <%= f.number_field :available_gps %>
+  </div>
+
+  <div class="field">
+    <%= f.label :number_gps %>
+    <%= f.number_field :number_gps %>
+  </div>
+
+  <div class="field">
+    <%= f.label :number_phone %>
+    <%= f.number_field :number_phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :emei %>
+    <%= f.number_field :emei %>
+  </div>
+
+  <div class="field">
+    <%= f.label :xtra %>
+    <%= f.text_area :xtra %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

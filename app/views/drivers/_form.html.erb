@@ -1,0 +1,57 @@
+<%= form_for(driver) do |f| %>
+  <% if driver.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(driver.errors.count, "error") %> prohibited this driver from being saved:</h2>
+
+      <ul>
+      <% driver.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :available_dr %>
+    <%= f.text_field :available_dr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :surname %>
+    <%= f.text_field :surname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rut %>
+    <%= f.number_field :rut %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rut_dv %>
+    <%= f.number_field :rut_dv %>
+  </div>
+
+  <div class="field">
+    <%= f.label :number_phone %>
+    <%= f.number_field :number_phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :picture_dr %>
+    <%= f.text_field :picture_dr %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

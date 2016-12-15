@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  patent: MyString
+  model_vh: MyString
+  picture_vh: MyString
+  color_marker: MyString
+  status_vh: 1
+
+two:
+  name: MyString
+  patent: MyString
+  model_vh: MyString
+  picture_vh: MyString
+  color_marker: MyString
+  status_vh: 1

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @gp.status %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @gp.latitude %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @gp.length %>
+</p>
+
+<p>
+  <strong>Available gps:</strong>
+  <%= @gp.available_gps %>
+</p>
+
+<p>
+  <strong>Number gps:</strong>
+  <%= @gp.number_gps %>
+</p>
+
+<p>
+  <strong>Number phone:</strong>
+  <%= @gp.number_phone %>
+</p>
+
+<p>
+  <strong>Emei:</strong>
+  <%= @gp.emei %>
+</p>
+
+<p>
+  <strong>Xtra:</strong>
+  <%= @gp.xtra %>
+</p>
+
+<%= link_to 'Edit', edit_gp_path(@gp) %> |
+<%= link_to 'Back', gps_path %>
